@@ -394,7 +394,7 @@
   ;; :inspect/rebl         (Any JDK 11 distribution - tested with OpenJDK)
 
   :inspect/rebl
-  {:extra-deps {com.cognitect/rebl          {:mvn/version "0.9.241"}
+  {:extra-deps {com.cognitect/rebl          {:mvn/version "0.9.242"}
                 org.clojure/core.async      {:mvn/version "1.3.610"}
                 org.openjfx/javafx-fxml     {:mvn/version "11.0.1"}
                 org.openjfx/javafx-controls {:mvn/version "11.0.1"}
@@ -408,7 +408,7 @@
    :main-opts  ["-m" "cognitect.rebl"]}
 
   :inspect/rebl-java8
-  {:extra-deps {com.cognitect/rebl {:mvn/version "0.9.241"}}
+  {:extra-deps {com.cognitect/rebl {:mvn/version "0.9.242"}}
    :main-opts  ["-m" "cognitect.rebl"]}
 
 
