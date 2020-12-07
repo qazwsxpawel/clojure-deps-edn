@@ -940,6 +940,19 @@
    :main-opts  ["-m" "closh.zero.frontend.rebel"]}
 
 
+  ;; prnc aliases
+  ;; datomic
+  :datomic
+  {:extra-deps {com.datomic/ion          {:mvn/version "0.9.48"}
+                com.datomic/client-cloud {:mvn/version "0.8.102"}}}
+
+  :ion-dev
+  {:extra-deps {com.datomic/ion-dev {:mvn/version "0.9.276"}}
+   :main-opts  ["-m" "datomic.ion.dev"]}
+
+  :datomic-dev-local
+  {:extra-deps {com.datomic/dev-local {:mvn/version "0.9.229"}}}
+
 
   } ;; End of alias definitions
 
@@ -956,7 +969,7 @@
              ;; "sonatype" {:url "https://oss.sonatype.org/content/repositories/snapshots/"}
 
              ;; clojars.org mirror - publicly accessible
-             ;; "jcenter" {:url "https://jcenter.bintray.com"}
+             "jcenter" {:url "https://jcenter.bintray.com"}
 
              ;; Maven Central Google Cloud Storage mirrors
              ;; Americas
@@ -970,4 +983,6 @@
 
              ;; Example of local Artifactory repository configuration
              ;; {"business-area" {:url "https://artifacts.internal-server.com:443/artifactory/business-area-maven-local"}
+             "datomic-cloud" {:url "s3://datomic-releases-1fc2183a/maven/releases"}
+
              }}
